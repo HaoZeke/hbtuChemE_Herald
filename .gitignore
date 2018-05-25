@@ -235,3 +235,6 @@ TSWLatexianTemp*
 
 # standalone packages
 *.sta
+
+# Emacs crud
+_*
