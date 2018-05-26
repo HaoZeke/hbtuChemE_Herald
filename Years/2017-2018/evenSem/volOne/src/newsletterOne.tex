@@ -1,0 +1,311 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Professional Newsletter Template
+% LaTeX Template
+% Version 1.0 (09/03/14)
+%
+% Created by:
+% Bob Kerstetter (https://www.tug.org/texshowcase/) and extensively modified by:
+% Vel (vel@latextemplates.com)
+% 
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[11pt]{article} % The default font size is 10pt; 11pt and 12pt are alternatives
+
+\input{structure.tex} % Include the document which specifies all packages and structural customizations for this template
+
+\begin{document}
+
+% ----------------------------------------------------------------------------------------
+% HEADER IMAGE
+% ----------------------------------------------------------------------------------------
+
+\begin{figure}[H]
+  \centering\includegraphics[width=0.2\linewidth, keepaspectratio]{../img/logo_square.png}
+\end{figure}
+% ----------------------------------------------------------------------------------------
+% SIDEBAR - FIRST PAGE
+% ----------------------------------------------------------------------------------------
+\begin{minipage}[t]{.30\linewidth} % Mini page taking up 30% of the actual page
+  \begin{mdframed}[style=sidebar,frametitle={}] % Sidebar box
+
+    % -----------------------------------------------------------
+
+    \hypertarget{contents}{\textbf{{\large In This
+          Issue\ldots}}} % \hypertarget provides a label to reference using \hyperlink{label}{link text}
+    \begin{itemize}
+      \setlength\itemsep{1em}
+    \item \hyperlink{hodOffice}{From the HOD's office} % These link to their appropriate sections in the newsletter
+    \item \hyperlink{moneyHungry}{Privatization of educational software}
+    \item \hyperlink{fireBalls}{Environment friendly fire extinguishers}
+    \item \hyperlink{desalination}{Water harvesting via desalination}
+    \end{itemize}
+
+    \centerline {\rule{.75\linewidth}{.25pt}} % Horizontal line
+    
+  \end{mdframed}\hfill
+
+  % ----------------------------------------------------------------------------------------
+
+  \centering
+  \begin{minipage}[t]{.95\linewidth}
+    \textbf{Mail submissions, suggestions etc. to: \\}
+    \textit{hbtucheme@gmail.com \\~\\}    
+    \textbf{Editor:}\\
+    \small Rohit Goswami \\
+    Final Chemical
+  \end{minipage}
+
+  % ----------------------------------------------------------------------------------------
+
+\end{minipage}\hfill % End the sidebar mini page
+% ----------------------------------------------------------------------------------------
+% IN-TEXT BOX
+% ----------------------------------------------------------------------------------------
+\begin{minipage}[t]{.66\linewidth}
+
+\begin{mdframed}[style=intextbox,frametitle={}] % Sidebar box
+
+  \hypertarget{hodOffice}{\heading{From the Head's Office}{0pt}} % \hypertarget provides a label to reference using \hyperlink{label}{link text}
+  It is with great pleasure that I present this inaugral issue of the Chemical
+  Engineering Herald (ChemE Herald). This technical periodical newsletter is a
+  departmental initiative to showcase and foster the growth and exposition of
+  technical expertise. \\
+  --- \textsc{\textbf{Prof. S. K. Gupta}}
+\end{mdframed}
+
+  \hypertarget{moneyHungry}{\heading{Privatization of educational
+      software}{6pt}}  % \hypertarget provides a label to reference using \hyperlink{label}{link text}
+  { \small  \textbf{By: Rohit Goswami, Final ChemE}\\ }
+  From process simulation techniques to NIST (SUPERTAPP) databases for chemical engineering
+  data, there has been an inexorable march towards monetization and
+  privatization of educational software. This is damning for aspiring chemical
+  engineering students, as the software on which real predictions are based are
+  being efficiently and quickly subsumed into various commercial software
+  systems, like ASPEN and others. Even
+  \autocite{towlerChemicalEngineeringDesign2013} states emphatically that the
+  latest cost correlations and affiliated costing data are available via ASPEN
+  only, and has not been published in open literature.
+
+  For a subject based on the sharing of industrial knowledge, with roots in the
+  ACS (American Chemical Society) this is a grave state of affairs and is a
+  strange irony. The most striking example of this wealth induced decline of academic
+  resources is of course that of the erstwhile CHESS (Chemical Engineering
+  Simulation System), developed by Dr. Rudy Motard and Dr. Ernest Henley at the
+  University of Houston with a grant from the U.S. Navy. The developers of CHESS
+  after gaining much academic merit chose to sell their rights to the software
+  which has now become unavailable to students and is now marketed as CHEMCAD.
+
+  For the basic sciences there are still databases of freely available, robustly
+  verified data, however, lest this miserable state of decline be noted and
+  halted, our subject will decline away into nothingness. At this rate, the
+  efforts of stalwarts such as Dryden, Sherwood, McCabe et. al who chose to
+  disseminate their findings for the education of future generations will go in
+  vain as there are none who carry forth their legacy.
+
+  This is not meant to be an invective piece on the relative merits of paid and
+  open source software, however it must be noted with praise that the computer
+  science discipline has never faced a slump by open sourcing their data and
+  software tools. No company keeps secret in house programming languages,
+  whereas in our industries, secrecy and stringent patent laws are the norm.
+\end{minipage}
+%
+% ----------------------------------------------------------------------------------------
+% MAIN BODY 
+% ----------------------------------------------------------------------------------------
+%
+
+\deco{10pt}{$\clubsuit$~$\clubsuit$~$\clubsuit$}
+  \hypertarget{fireBalls}{\heading{Environment friendly fire extinguishers}{6pt}}  % \hypertarget provides a label to reference using \hyperlink{label}{link text}
+  { \small  \textbf{By: Bhawani Shankar Tiwari, Third ChemE}\\ }
+
+\begin{multicols}{2} % Two-column layout
+The aim behind the development of new technology is for the production of novel,
+halogen-free, environmentally safe, highly efficient fire-extinguishing powders.
+It is based on local mineral raw materials and elaboration of new types of
+fire-protective materials. The basis of such fire-extinguishing powders are the
+composite materials which function as efficient flame retardant.
+
+New technological developments are done which comprise of Micro Fog System and
+Low Frequency Sound which are more efficient and eco-safe than the traditional
+fire extinguishers. Fire extinguishing powders are prepared by grinding the raw
+materials followed by screening up to 250 micrometer dispersity, drying at
+700-1000 degree Celsius and mixing of raw materials.
+
+It does not require any additional chemical processing and modifications like
+expensive halogen containing hydrophobizing additives. Raw materials zeolite,
+clay shale and perlite are chosen due to their high performance properties and
+the ability to suppress the combustion and burning processes. They are of
+silicate origin, containing alkali and alkaline-earth metal carbonates,
+bicarbonates and iron, aluminium, alkali metal hydroxides. Therefore, at high
+temperatures these raw materials are characterized with emission of
+incombustible gases, steam and metal oxides which dilute combustible products,
+creating protective film and coke layer on the surface of material.
+
+On the basis of thermogravimetric analysis it is stated that at the first stage
+adsorption and crystallization water separation takes place. At the next stage
+of higher temperature (700 degree celcius and more) there happens to be the
+formation of metal oxides protective film and coke layer. The liberated
+incombustible gases and water steam in the flame zone functions as phlegmatizer
+which leads to formation of swelled layer in surface zone. The protective film
+of metal oxides and coke layer cause a strong fire-limiting effect. This
+indicates the fact that these materials can exhibit the properties similar to
+highly effective homogeneous inhibitors.
+
+\subsection*{Powder enchancing equipment}
+
+\subsubsection*{A. Fire Extinguishing Balls}
+Several modern ball or grenade-style extinguishers are available in the market. They 
+are manually operated by rolling or throwing into the fire. In modern version, the ball 
+will explode once it comes in contact with the flame, dispersing a cloud of ABC dry 
+chemical powder over the fire which extinguishes the flame. The coverage area is 
+about 5 $m^2$ (54 sq. ft.).The benefit of this method is that it may be used for passive 
+suppression. The ball can be placed in a fire prone area and will deploy automatically 
+if a fire develops. Most modern extinguishers of this type are designed to make a loud 
+noise upon deployment.
+
+\subsubsection*{B. Condensed Aerosol Fire Suppression}
+ Condensed aerosol fire suppression is a particle-based form of fire extinction 
+similar to gaseous fire suppression or dry chemical fire extinction. As in the case of
+gaseous fire suppressants, condensed aerosol suppressants also use clean agents to 
+suppress fire. The agent can be delivered by means of mechanical operation, electric 
+operation, or combined electro-mechanical operation. The difference between gaseous 
+suppressants and dry chemical extinguisher is that the former emits only gas, while the 
+later release powder-like particles of a large size (25-150 micrometer).The condensed aerosols 
+are defined by the National Fire Protection Association as they release finely divided 
+solid particles (generally <10 micrometer) in addition to gas.
+The dry chemical systems must be directly aimed at the flame. The condensed 
+aerosols are flooding agents and therefore are effective regardless of the location and 
+height of the fire. 
+
+\subsection*{Other Innovative Fire Extinguishers}
+
+\subsubsection*{Water Mist Systems (Micro Fog)}
+It converts liquid water to uniform fine water mist (50 to 200 micro m). It is a new 
+fire extinguishing system which is clean and has enhanced fire extinguishing 
+capability, marked by both high cooling capability of sprinkler system and 
+excellent fire extinguishing capability of gas type fire extinguishing system. It 
+suppresses fire with less water discharge even for those objects for which the 
+conventional water-based fire extinguishing equipment is not viable considering
+performance and economy.
+
+\subsubsection*{Low Frequency Sound}
+The basic concept behind this technology is the displacement of air by sound 
+waves. Sound waves (pressure waves) displaces oxygen as they travel through the 
+air. By producing sound of 30 to 60 Hz we can deprive oxygen from the space 
+which inhibits the growth of fire. This technology is free from chemical and water 
+and offers a relatively non-destructive method of fire control, which could find 
+applications in fighting home and small scale fire.
+
+\end{multicols}
+
+
+\deco{10pt}{$\clubsuit$~$\clubsuit$~$\clubsuit$}
+
+  \hypertarget{desalination}{\heading{Water harvesting via desalination}{6pt}}  % \hypertarget provides a label to reference using \hyperlink{label}{link text}
+  { \small  \textbf{By: Shantanu Mall, Third Mechanical}\\ }
+
+\begin{multicols}{2} % Two-column layout
+Less than 3\% of the Earth's water is fresh, with most of it trapped underground or 
+in ice and glaciers. That only leaves less than 1\% accessible for drinking and 
+supporting life as we know it. Fresh water is finite yet we continue to waste it not 
+knowing that we are dooming ourselves to a catastrophic crisis. There is an urgent 
+need of new water harvesting methods and desalination is one of the most 
+prominent method being used.
+
+Desalination is a process that extracts mineral components from saline 
+water. Saltwater is desalinated to produce water suitable for human 
+consumption or irrigation. Feed water sources may include brackish, seawater, 
+wells, surface (rivers and streams), wastewater, and industrial feed and process 
+waters. Seawater desalination has the potential to reliably produce enough potable 
+water to support large populations located near the coast.
+
+The problem is that the desalination of water requires a lot of energy. Salt dissolves 
+very easily in water, forming strong chemical bonds, and those bonds are difficult 
+to break. The International Desalination Association says that there are about 
+19,000 desalination plants operating around the world. They pumped out 
+approximately 14.7 billion gallons (55.6 billion liters) of drinkable freshwater a 
+day. A lot of these plants are in countries like Saudi Arabia, where energy from oil 
+is cheap but water is scarce.
+
+\subsection*{Desalination Processes}
+The two basic methods for the desalination of seawater from a chemical
+engineering perspective are:
+
+\begin{description}
+\item \textbf{Thermal Distillation and Membrane separation} 
+  
+  Thermal distillation involves heating and Boiling water turns it into vapour
+ leaving the salt behind that is collected and condensed back into water by 
+ cooling it down.
+
+ \item \textbf{Reverse Osmosis}
+
+   The leading process for desalination in terms of installed capacity and yearly 
+growth is reverse osmosis (RO). The RO membrane processes use semipermeable 
+membranes and applied pressure (on the membrane feed side) to preferentially 
+induce water permeation through the membrane while rejecting salts. Reverse 
+osmosis plant membrane systems typically use less energy than thermal 
+desalination processes. Water shoots into the cylinders at a pressure of 70 
+atmospheres and is pushed through the membranes, while the remaining brine is 
+returned to the sea. 
+\end{description}
+
+Desalination processes are driven by either thermal (e.g., distillation) or electrical 
+(e.g., RO) as the primary energy types. Energy cost in desalination processes varies 
+considerably depending on water salinity, plant size and process type. RO 
+membranes do not have distinct pores that traverse the membrane and lie at one 
+extreme of commercially available membranes. The polymer material of RO 
+membranes forms a layered, web-like structure, and water must follow a tortuous 
+pathway through the membrane to reach the permeate side. RO membranes can 
+reject the smallest contaminants, monovalent ions, while other membranes, 
+including nanofiltration (NF), ultrafiltration (UF), and micro-filtration (MF), are 
+designed to remove materials of increasing size.
+
+\subsection*{Case Study: Israel}
+
+Israel has proven itself as a world leader in desalination after decades of research 
+and entrepreneurship. The new plant in Israel, called Sorek, was finished in late 
+2013 but is just now ramping up to its full capacity; it will produce 627,000 cubic 
+meters of water daily, providing evidence that such large desalination facilities are 
+practical. Indeed, desalinated seawater is now a mainstay of the Israeli water 
+supply. Whereas in 2004 the country relied entirely on groundwater and rain, it 
+now has four seawater desalination plants running; Sorek is the largest. Those 
+plants account for 40 percent of Israel's water supply. Israel now gets 55 percent of 
+its domestic water from desalination, and that has helped to turn one of the world's 
+driest countries into the unlikeliest of water giants. Desalination is seen by some as 
+a magic bullet, the shield that saved Israel from the whims of nature.
+
+Need of the hour-
+Despite the economic and environmental hurdles, desalination is becoming 
+increasingly attractive as we run out of water from other sources. We are 
+overpumping groundwater, we have already built more dams than we can afford 
+economically and environmentally, and we have tapped nearly all of the accessible 
+rivers.
+
+
+The world faces an unprecedented crisis in water resources management, 
+with profound implications for global food security, protection of human health, 
+and maintenance of all ecosystems on Earth. Large uncertainties still plague 
+quantitative assessments of climate change impacts and water resource 
+management
+Fortunately, the human race has a reputation for having the irrepressible ability to 
+adapt in times of great adversity by rising to meet great challenges. We need to 
+realise that it is not too late to make the necessary changes and that even in our 
+own personal capacity, we have the ability to change the world.
+
+\begin{quote}
+\textsl{``Save Water, Save Life''} --- \textrm{Anonymous}
+\end{quote}
+
+
+\end{multicols}
+
+\deco{10pt}{$\clubsuit$~$\clubsuit$~$\clubsuit$}
+
+\end{document}

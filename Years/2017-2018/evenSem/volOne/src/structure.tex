@@ -24,6 +24,40 @@
 \usepackage{booktabs} % Required for nice horizontal rules in tables
 \usepackage{wrapfig} % Required for in-line images
 \usepackage{float} % Required for forcing figures not to float with the [H] parameter
+\usepackage{fancyhdr} % For better header footer setup
+
+% -----------------------------------------------
+% References
+
+\usepackage[
+backend=biber,
+autocite = superscript,
+bibstyle=phys,
+backref=true,
+hyperref=true,
+block=none,
+natbib=true,
+doi=true,
+uniquename=false,
+autopunct=true,
+sorting=nyt
+]{biblatex}
+
+\makeatletter
+% Citation Fine Tuning
+\DeclareFieldFormat{edition}        % Changes spacing for the edition numbers.
+                   {\ifinteger{#1}
+                    {\mkbibordedition{#1}\addthinspace{}ed.}
+                    {#1\isdot}}
+% Prints author names as small caps
+\renewcommand{\mkbibnamegiven}[1]{\textsc{#1}}
+\renewcommand{\mkbibnamefamily}[1]{\textsc{#1}}
+\renewcommand{\mkbibnameprefix}[1]{\textsc{#1}}
+\renewcommand{\mkbibnamesuffix}[1]{\textsc{#1}}
+\makeatother
+
+% Add Bibs
+\addbibresource{refs.bib}
 
 %------------------------------------------------
 % Fonts
@@ -31,6 +65,10 @@
 \usepackage{charter} % Use the Charter font as the main document font
 \usepackage{courier} % Use the Courier font for \texttt (monospaced) only
 \usepackage[T1]{fontenc} % Use T1 font encoding
+% \usepackage{tgbonum}
+% \usepackage{tgpagella}
+% \usepackage{tgschola}
+% \usepackage{fourier}
 
 %------------------------------------------------
 % List Separation
@@ -69,6 +107,18 @@
 \parskip = 4pt % Space between paragraph
 \parindent = 0.0in % Paragraph indentation
 \pagestyle{empty} % Disable page numbering
+
+% Add to the above with fancyhdr
+% \renewcommand{\headrulewidth}{0pt}
+% \renewcommand{\footrulewidth}{0pt}
+% \setlength\headheight{80.0pt}
+% \addtolength{\textheight}{-80.0pt}
+
+% This is the logo location now
+% \chead{\includegraphics[width=0.15\linewidth]{../img/logo_square.png}}
+
+% Now put the header on page one
+% \thispagestyle{fancy}
 
 %----------------------------------------------------------------------------------------
 %	COLORS
@@ -131,3 +181,12 @@
 }
 
 \newcommand{\BackToContents}{\hyperlink{contents}{{\small Back to Contents}}} % Define a command for linking back to the contents of the newsletter
+
+
+\newcommand\deco[2]{%
+  \par\vspace{1ex}
+  \begin{center}
+  \fontsize{#1}{#1}\usefont{U}{webo}{xl}{n}#2
+  \end{center}
+  \vspace*{1ex}\par
+}
